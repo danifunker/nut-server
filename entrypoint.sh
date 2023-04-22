@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add custom id and password to secure nut-server
-echo "\n$ID|$PASSWORD" >> /root/nut.src.latest/conf/users.conf
+# echo "\n$ID|$PASSWORD" >> /root/nut.src.latest/conf/users.conf
 
 #add crontask for regularly check for new games on /games folder
 echo "0-59 * * * * wget --spider --user $ID --password $PASSWORD http://127.0.0.1:9000/api/scan" > /etc/cron.d/scraping-nut
