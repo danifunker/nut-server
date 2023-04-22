@@ -1,6 +1,6 @@
 FROM python:latest
 
-MAINTAINER marcel@marquez.fr
+MAINTAINER dani@funkervogt.com
 
 ARG branch_name=master
 
